@@ -1,0 +1,12 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+contract Trinity is ERC20 {
+    constructor() ERC20 ("Trinity", "TRY") {
+        _mint(msg.sender, 500000000000000000000);
+    }
+}
+
+// Agradecido con Web 3 Mastery "Victor, Abel, Juan Carlos"
